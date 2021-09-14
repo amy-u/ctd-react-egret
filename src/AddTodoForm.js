@@ -5,7 +5,7 @@ function AddTodoForm () {
         <div>
             <form>
                 <label htmlFor="todoTitle">Title:</label>
-                <input id="todoTitle"></input>
+                <input id="todoTitle" type="text"></input>
                 <button>Add</button>
             </form>
         </div>
