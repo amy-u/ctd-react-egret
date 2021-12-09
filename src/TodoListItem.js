@@ -3,7 +3,7 @@ import React from "react";
 const TodoListItem = (props) => {
   return (
     <div>
-      <li id={props.id}> {props.todo}</li>
+      <li>{props.todo}</li>
     </div>
   );
 };
