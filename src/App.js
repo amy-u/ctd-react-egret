@@ -5,6 +5,7 @@ import AddTodoForm from "./AddTodoForm";
 
 function App() {
   const [newTodo, setNewTodo] = React.useState('');
+  const [todoList, setTodoList] = React.useState([]);
   return (
     <div>
       <header>
@@ -12,7 +13,7 @@ function App() {
       </header>
       <AddTodoForm onAddTodo={setNewTodo}/>
       <p>Successfully added: "{newTodo}"</p>
-      <TodoList />
+      <TodoList todoList={todoList} />
     </div>
   );
 }
