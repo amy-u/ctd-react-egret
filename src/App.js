@@ -9,6 +9,12 @@ function App() {
   const addTodo = (newTodo) => {
     setTodoList([...todoList, newTodo]);
   }
+
+  React.useEffect(() => {
+    let stringTodoList = JSON.stringify(todoList);
+    localStorage.setItem('savedTodoList', stringTodoList);
+  });
+
   return (
     <div>
       <header>
